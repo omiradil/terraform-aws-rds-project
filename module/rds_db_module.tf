@@ -1,8 +1,4 @@
-
- ## Please use below code
-
-```
-  module "rds_db" {
+module "rds_db" {
   source = "../"
   region = "us-east-2"
 
@@ -27,6 +23,3 @@
   ]
 
 }
-      
-}
-```

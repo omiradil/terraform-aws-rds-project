@@ -1,10 +1,4 @@
-
- ## Please use below code
-
-```
-  module "rds_db" {
-  source = "../"
-  region = "us-east-2"
+region = "us-east-2"
 
   database_name           = "dbname"
   cluster_identifier      = "aurora-cluster"
@@ -13,6 +7,7 @@
   availability_zones      = ["us-east-2a", "us-east-2b", "us-east-2c"]
   instance_class          = "db.t2.micro"
   master_username         = "foo"
+  # master_password         = "password"
   preferred_backup_window = "07:00-09:00"
   skip_final_snapshot     = true
 
@@ -25,8 +20,4 @@
   allowed_hosts = [
     "127.0.0.0/32"
   ]
-
-}
-      
-}
-```
+    
