@@ -3,7 +3,7 @@
 
 ```
   module "rds_db" {
-  source = "../"
+  source = "omiradil/rds-project/aws"
   region = "us-east-2"
 
   database_name           = "dbname"
