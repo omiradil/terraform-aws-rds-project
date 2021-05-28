@@ -1,5 +1,5 @@
 
- ## Please use below code
+ ## Please add below code
 
 ```
   module "rds_db" {
